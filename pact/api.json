@@ -1,0 +1,46 @@
+{
+  "provider": {
+    "name": "training-service"
+  },
+  "consumer": {
+    "name": "training-ui"
+  },
+  "interactions": [
+    {
+      "description": "Selecting all events / trainings saved in the backend",
+      "request": {
+        "method": "GET",
+        "path": "/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [{
+          "date": "03.01.2023",
+          "end": "20:00",
+          "start": "18:00"
+        }, {
+          "date": "07.01.2023",
+          "end": "20:00",
+          "start": "18:00",
+          "enemy": "Füchse Berlin"
+        }]
+      },
+      "providerStates": [
+        {
+          "name": "test GET"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pact-specification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "3.6.3"
+    }
+  }
+}
