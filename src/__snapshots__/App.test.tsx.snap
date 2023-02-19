@@ -1,93 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders learn react link 1`] = `
+exports[`App should be rendered and match the snapshot 1`] = `
 <div
   className="App"
 >
   <header
     className="App-header"
   >
-    <div>
-      <div
-        className="List-element"
-      >
-        <p>
-          Training:
-        </p>
-        <p>
-          03.01.2023
-        </p>
-        <p>
-          18:00
-           - 
-          20:00
-        </p>
-      </div>
-      <div
-        className="List-element"
-      >
-        <p>
-          Spiel:
-        </p>
-        <p>
-          07.01.2023
-        </p>
-        <p>
-          18:00
-           - 
-          20:00
-        </p>
-        <p>
-          Füchse Berlin
-        </p>
-      </div>
-    </div>
-  </header>
-</div>
-`;
-
-exports[`should render the App and match the snapshot 1`] = `
-<div
-  className="App"
->
-  <header
-    className="App-header"
-  >
-    <div>
-      <div
-        className="List-element"
-      >
-        <p>
-          Training:
-        </p>
-        <p>
-          03.01.2023
-        </p>
-        <p>
-          18:00
-           - 
-          20:00
-        </p>
-      </div>
-      <div
-        className="List-element"
-      >
-        <p>
-          Spiel:
-        </p>
-        <p>
-          07.01.2023
-        </p>
-        <p>
-          18:00
-           - 
-          20:00
-        </p>
-        <p>
-          Füchse Berlin
-        </p>
-      </div>
-    </div>
+    <div />
   </header>
 </div>
 `;

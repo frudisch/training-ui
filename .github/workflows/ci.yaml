@@ -3,13 +3,17 @@ name: Continuous Integration
 on: [push]
 
 jobs:
-  upload_pact_file:
+  build_and_test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 15.x]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          name: dist-without-markdown
-          path: pact
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm test
