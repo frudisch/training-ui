@@ -1,4 +1,3 @@
-import {EventTyp} from "../event-list/EventList";
 import axios from "axios";
 import sut from './selectEvents';
 
@@ -17,7 +16,7 @@ describe('Event selection', () => {
             start: '18:00',
             enemy: 'Füchse Berlin'
         }];
-        axiosMock.get.mockResolvedValue(expectedValues);
+        axiosMock.get.mockResolvedValue({data: expectedValues});
 
         const result = await sut();
 

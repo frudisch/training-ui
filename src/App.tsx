@@ -8,7 +8,6 @@ const App = () => {
     useEffect(() => {
         const getEvents = async () => {
             const selectedEvents = await selectEvents();
-            console.log(selectedEvents);
             setEvents(selectedEvents);
         }
 
