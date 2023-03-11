@@ -48,7 +48,7 @@
     "@types/node": "^18.15.0",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.4.3",
-    "cypress": "^12.6.0",
+    "cypress": "^12.7.0",
     "jest": "^27.4.5",
     "jest-mock-extended": "^3.0.3",
     "react-test-renderer": "^18.2.0",
