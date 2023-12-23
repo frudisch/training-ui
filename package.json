@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@cypress/react": "^7.0.3",
-    "@cypress/webpack-dev-server": "^3.5.2",
+    "@cypress/webpack-dev-server": "^3.7.1",
     "@types/jest": "^29.2.5",
     "@types/node": "^20.6.0",
     "@types/react-test-renderer": "^18.0.0",
